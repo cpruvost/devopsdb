@@ -78,10 +78,19 @@ resource "oci_core_security_list" "BastionSubnet" {
     destination = "0.0.0.0/0"
   }]
 
-  ingress_security_rules = [{
+  ingress_security_rules = [
+  {
     tcp_options {
       "max" = 22
       "min" = 22
+    }
+
+    protocol = "6"
+    source   = "0.0.0.0/0"
+  },
+  {  tcp_options {
+      "max" = 1521
+      "min" = 1521
     }
 
     protocol = "6"
