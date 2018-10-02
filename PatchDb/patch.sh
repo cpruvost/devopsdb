@@ -4,7 +4,7 @@ DBSYSTEMID=${DBSYSTEMID#'"'}
 DBSYSTEMID=${DBSYSTEMID::-1}
 echo "DBSYSTEMID = $DBSYSTEMID"
 
-export DBID=$(oci db database list --db-system-id=$DBSYSTEMID --compartment-id=ocid1.compartment.oc1..aaaaaaaach4c3i5kpecjfjqwp3wfjfmbbjniyzieaxhcjs6c73ya2wl6vaxq --query "data[?\"db-name\"=='aTFdb'].{Id:id}" | ./Jq/jq-linux64 .data[].id)
+export DBID=$(oci db database list --db-system-id=$DBSYSTEMID --compartment-id=ocid1.compartment.oc1..aaaaaaaach4c3i5kpecjfjqwp3wfjfmbbjniyzieaxhcjs6c73ya2wl6vaxq --query "data[?\"db-name\"=='aTFdb'].{Id:id}" | ./Jq/jq-linux64 .[0].Id)
 DBID=${DBID#'"'}
 DBID=${DBID::-1}
 echo "DBID = $DBID"
