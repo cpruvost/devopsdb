@@ -9,10 +9,10 @@ DBID=${DBID#'"'}
 DBID=${DBID::-1}
 echo "DBID = $DBID"
 
-export DBPATCHID=$(oci db patch list by-db-system --all --db-system-id=$DBSYSTEMID | ./Jq/jq-linux64 .data[].id)
-DBPATCHID=${DBPATCHID#'"'}
-DBPATCHID=${DBPATCHID::-1}
-echo "DBPATCHID = $DBPATCHID)
+#export DBPATCHID=$(oci db patch list by-db-system --all --db-system-id=$DBSYSTEMID | ./Jq/jq-linux64 .data[].id)
+#DBPATCHID=${DBPATCHID#'"'}
+#DBPATCHID=${DBPATCHID::-1}
+#echo "DBPATCHID = $DBPATCHID)
 
 #Patch DBID
 #oci db database patch --database-id=$DBID --patch-action="APPLY" --patch-id=$DBPATCHID
