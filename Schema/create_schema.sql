@@ -11,7 +11,7 @@ BEGIN
     IF cnt = 1 THEN
 	    @delete_ddl.sql;
 	
-		OS_COMMAND.EXEC('echo  \'Toto\'');
+		OS_COMMAND.EXEC('echo  "Toto"');
         --dbms_output.Put_line('User QUIZFLYWAY Already Exists');   
     ELSE
 		@create_ddl.sql
