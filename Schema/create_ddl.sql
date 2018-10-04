@@ -1,0 +1,14 @@
+alter session set container = MyPDB;
+CREATE USER quizflyway IDENTIFIED BY AlphA_2014_ CONTAINER=CURRENT;
+grant connect, resource to quizflyway;
+alter user quizflyway quota unlimited on users;
+alter user quizflyway quota unlimited on system;
+grant create view to quizflyway;
+alter user quizflyway enable editions;
+GRANT CREATE ANY EDITION, DROP ANY EDITION to quizflyway;
+CREATE EDITION V1;
+CREATE EDITION V1POINT1;
+CREATE EDITION V1POINT2;
+grant use on edition V1 to quizflyway;
+grant use on edition V1POINT1 to quizflyway;
+grant use on edition V1POINT2 to quizflyway;
