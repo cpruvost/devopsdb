@@ -9,7 +9,7 @@ BEGIN
     WHERE  USERNAME = 'QUIZFLYWAY';
 
     IF cnt = 1 THEN
-	    @delete_ddl.sql;
+	    --@delete_ddl.sql;
 	
         dbms_output.put_line('User QUIZFLYWAY Already Exists');   
     ELSE
