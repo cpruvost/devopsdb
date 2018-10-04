@@ -11,12 +11,11 @@ BEGIN
     IF cnt = 1 THEN
 	    @delete_ddl.sql;
 	
-		OS_COMMAND.EXEC('echo  "Toto"');
-        --dbms_output.Put_line('User QUIZFLYWAY Already Exists');   
+        dbms_output.put_line('User QUIZFLYWAY Already Exists');   
     ELSE
 		@create_ddl.sql
 		
-		dbms_output.Put_line('User QUIZFLYWAY Is There');   
+		dbms_output.put_line('User QUIZFLYWAY Is There');   
     END IF;
 END;
 /
