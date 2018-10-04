@@ -11,7 +11,7 @@ BEGIN
     IF cnt = 1 THEN
         dbms_output.Put_line('User Flyway Already Exists');   
     ELSE
-		EXECUTE IMMEDIATE 'CREATE USER quizflyway IDENTIFIED BY Alpha_2014_ CONTAINER=CURRENT';
+		EXECUTE IMMEDIATE 'CREATE USER quizflyway IDENTIFIED BY AlphA_2014_ CONTAINER=CURRENT';
 		EXECUTE IMMEDIATE 'grant connect, resource to quizflyway';
 		EXECUTE IMMEDIATE 'alter user quizflyway quota unlimited on users';
 		EXECUTE IMMEDIATE 'alter user quizflyway quota unlimited on system';
