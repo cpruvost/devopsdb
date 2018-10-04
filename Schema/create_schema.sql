@@ -1,5 +1,5 @@
 set serverout on;
-alter session set container = MyPDB;
+alter session set container = MYPDB;
 DECLARE
     cnt NUMBER;
 BEGIN
@@ -15,7 +15,7 @@ BEGIN
     ELSE
 		@create_ddl.sql
 		
-		dbms_output.Put_line('User QUIZFLYWAY OK');   
+		dbms_output.Put_line('User QUIZFLYWAY Is There');   
     END IF;
 END;
 /
