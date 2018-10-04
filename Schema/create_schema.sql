@@ -1,4 +1,5 @@
 set serverout on;
+alter session set container = MyPDB;
 DECLARE
     cnt NUMBER;
 BEGIN
@@ -8,11 +9,11 @@ BEGIN
     WHERE  USERNAME = 'QUIZFLYWAY';
 
     IF cnt = 1 THEN
-	    start deleter_ddl.sql;
+	    @delete_ddl.sql;
 	
         dbms_output.Put_line('User QUIZFLYWAY Already Exists');   
     ELSE
-		start create_ddl.sql
+		@create_ddl.sql
 		
 		dbms_output.Put_line('User QUIZFLYWAY OK');   
     END IF;

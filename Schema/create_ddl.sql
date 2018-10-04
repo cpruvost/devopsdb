@@ -1,4 +1,3 @@
-alter session set container = MyPDB;
 CREATE USER quizflyway IDENTIFIED BY AlphA_2014_ CONTAINER=CURRENT;
 grant connect, resource to quizflyway;
 alter user quizflyway quota unlimited on users;
