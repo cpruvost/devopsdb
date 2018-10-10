@@ -1,14 +1,14 @@
 ### Authentication details
-export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaa33v7nazcbtihlsqej3tfnmoejalaw2jqh372f62ad2w7i3g7yk5q"
-export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaat4bbthifpovo3w4dclqtrjngxj2ucuve6kwtnntg6z7v2k7am6oa"
-export TF_VAR_fingerprint="4f:90:09:d7:2a:ea:81:a8:76:97:2a:51:9c:e9:36:03"
+export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1.xxxxx"
+export TF_VAR_user_ocid="ocid1.user.oc1.xxxxx"
+export TF_VAR_fingerprint="4f:90:09:d7:2a:ea:81:a8:76:97:xxxxxx"
 export TF_VAR_private_key_path="./SshKeys/APIKeys/bmcs_api_key.pem"
 
 ### Region
 export TF_VAR_region="us-ashburn-1"
 
 ### Compartment
-export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaach4c3i5kpecjfjqwp3wfjfmbbjniyzieaxhcjs6c73ya2wl6vaxq"
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1.xxxxx"
 
 ### Public/private keys used on the instance
 export TF_VAR_ssh_public_key=$(cat ./SshKeys/IaaSkeys/id_rsa.pub)
