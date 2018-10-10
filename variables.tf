@@ -1,3 +1,4 @@
+# Cloud Domain Information 
 variable "tenancy_ocid" {}
 variable "user_ocid" {}
 variable "fingerprint" {}
@@ -8,12 +9,7 @@ variable "compartment_ocid" {}
 variable "ssh_public_key" {}
 variable "ssh_private_key" {}
 
-# Choose an Availability Domain
-variable "AD" {
-    default = "2"
-}
-
-# DBSystem specific 
+# DBSystem Information
 variable "DBNodeShape" {
     default = "VM.Standard1.2"
 }
@@ -42,9 +38,6 @@ variable "DBDisplayName" {
     default = "MyTFDB"
 }
 
-/*variable "DBDiskRedundancy" {
-    default = "HIGH"
-}*/
 variable "DBDiskRedundancy" {
     default = "NORMAL"
 }
@@ -55,11 +48,6 @@ variable "DBNodeDisplayName" {
 
 variable "DBNodeHostName" {
     default = "myOracleDB"
-}
-
-# Define existing bastion host
-variable "BastionHost" {
-    default = "129.146.26.52"
 }
 
 variable "HostUserName" {
@@ -79,7 +67,7 @@ variable "DBWorkload" {
 }
 
 variable "PDBName" {
-	default = "MyPDB"
+	default = "MYPDB"
 }
 
 variable "DataStorageSizeInGB" {
