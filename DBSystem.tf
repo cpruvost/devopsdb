@@ -21,7 +21,7 @@ resource "oci_database_db_system" "TFDBNode" {
   }
   disk_redundancy = "${var.DBDiskRedundancy}"
   shape = "${var.DBNodeShape}"
-  subnet_id = "${oci_core_subnet.BastionSubnetAD2.id}"
+  subnet_id = "${oci_core_subnet.DbSubnetAD2.id}"
   ssh_public_keys = ["${var.ssh_public_key}"]
   display_name = "${var.DBNodeDisplayName}"
 
