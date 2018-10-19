@@ -10,8 +10,6 @@ The steps of the pipeline are :
 
 Do not hesitate to use it and ask for enhancements if you have any ideas. We will use Developer CS for the pipeline but you can use another solution if you want (Jenkins for ex).
 
-Note : After this workshop you can do the workhop "Create all the objects of the schema QUIZFLYWAY with `Flyway`" 
-
 ## Table of Contents
 
 1. Installation and Configuration [01-install.md](docs/01-install.md)
@@ -22,6 +20,8 @@ Note : After this workshop you can do the workhop "Create all the objects of the
 6. Create the pipeline in `Developer Cloud Service` [06-pipeline.md](docs/06-pipeline.md)
 7. Connect to the schema with `Oracle SQL Developer`  [07-sqldev.md](docs/07-sqldev.md)
 8. Option : remove the Database if needed  [08-deldb.md](docs/08-deldb.md)
+
+Note : After this workshop you can do the workhop [Create all the objects of the schema QUIZFLYWAY with Flyway](https://github.com/cpruvost/devopsdbflyway) 
 
 ## Feedback
 
