@@ -6,7 +6,7 @@ On the Oracle Cloud Web Console, go on the dashboard and then in Developer Cloud
 
 In order to speed up your work, if you are with Oracle people, we created it for you so you just click on the right menu "Access Service instance".
 
-Now create an Empty Project called "DevOpsDbx". Update the number in the name according to your user number (ex : DevOpsDb1 if you are user1.devops).
+Now create an Empty Private Project called "DevOpsDbx". Update the number in the name according to your user number (ex : DevOpsDb1 if you are user1.devops). It takes 2 minute to get  it.
 
 ![Create Empty Project](images/DevCS_Create_Project.png)
 
@@ -23,7 +23,7 @@ Copy the url, you will need it.
 In the DevOpsDbVM (use Putty), go in the devops directory (your local project). We got this code before and you updated it before. 
 
 ```shell
-cd devops
+cd devopsdb
 #update the git origin
 git remote show origin
 git remote set-url origin "url of your devops git repository"
