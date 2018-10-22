@@ -16,4 +16,4 @@ terraform destroy -auto-approve -no-color
 
 If you run the Job then the database will be destroyed. It will take about 15 minutes.
 
- 
+ Next : After this workshop you can do the workhop [Create all the objects of the schema QUIZFLYWAY with Flyway](https://github.com/cpruvost/devopsdbflyway) 

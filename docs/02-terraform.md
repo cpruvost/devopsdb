@@ -92,8 +92,8 @@ as your terraform back-end.
 Send the state file to a bucket so that it can be secured and shared between
 people in the team. In order to proceed:
 
+- In the OCI web console, go to Identity/Compartments and create a compartment "DevOpsDbCompt1" (Update the number 1 in relation with your user number in the Workshop)
 - In the OCI web console, go to Object Storage and create a bucket `MyBucket1ForTerraform` in your compartment (Update the number 1 of Bucket1 in relation with your user number in the Workshop).
-
 - Upload the current state to your bucket with OCI CLI
 
 ```shell
@@ -157,3 +157,6 @@ cat .terraform/terraform.tfstate
 ```
 
 You shoud see that the terraform state has been initialized.
+
+Next [03-devcs-terraform.md](03-devcs-terraform.md)
+

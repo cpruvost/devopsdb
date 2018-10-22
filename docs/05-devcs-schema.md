@@ -19,4 +19,4 @@ Note that we will use a feature of the Oracle Database Enterprise Edition (EBR =
 
 Run the job only if the database is ready and if the job patch is successful. Look at the result.
 
- 
+ Next [06-pipeline.md](06-pipeline.md)

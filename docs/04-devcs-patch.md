@@ -22,5 +22,5 @@ You see some comments on line for patching Db because this feature is new and th
 
 Run this job only if the database is ready and look at the result in the build Log.
 
- 
+ Next [05-devcs-schema.md](05-devcs-schema.md) 
 

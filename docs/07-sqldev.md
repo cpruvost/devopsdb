@@ -14,4 +14,4 @@ Connect to the database.
 
 Now you can create all objects of the Schema QUIZFLYWAY with a Flyway project...so let's go to another github project (UNDER CONSTRUCTION).
 
- 
+ Next [08-deldb.md](08-deldb.md)

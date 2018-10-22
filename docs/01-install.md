@@ -8,15 +8,15 @@ First you need an OCI account. If you do the workshop with Oracle then the train
 - Cloud User. Ex : devopsdb.user1
 - Cloud Password. Ex : Alpha_2014_!
 
-If you don't do the workshop with Oracle then you can do a [Trial](https://cloud.oracle.com/en_US/database)
+If you don't do the workshop with Oracle then you can do a [Trial](https://cloud.oracle.com/en_US/database). 
 
 In order to speed up your work, if you do the workshop with Oracle then the trainer will give you information for connecting to a Linux VM with all the good prerequisites. You just then need to connect to the Linux VM with ssh (Using Putty on windows for ex). So you need :
 
-- Ip Adress of the VM
+- Public Ip Adress of the VM
 - user : opc (note that you can be root with sudo -s)
 - SSh Workshop Key : [Ssh Public Key](https://objectstorage.us-ashburn-1.oraclecloud.com/n/gse00014392/b/DevOpsDbBucket/o/id_rsa.pub), [Ssh Private Key](https://objectstorage.us-ashburn-1.oraclecloud.com/n/gse00014392/b/DevOpsDbBucket/o/id_rsa), [Ssh Putty Key](https://objectstorage.us-ashburn-1.oraclecloud.com/n/gse00014392/b/DevOpsDbBucket/o/id_rsa.ppk)
 
-If you don't do the workshop with Oracle then a [DevOpsDBVMImage](https://objectstorage.us-ashburn-1.oraclecloud.com/n/gse00014392/b/DevOpsDbBucket/o/DevOpsDbVMImage) is available for you. You just have to import this image in your custom images and then to create an Oracle Linux VM from this image.
+If you don't do the workshop with Oracle then a [DevOpsDBVMImage](https://objectstorage.us-ashburn-1.oraclecloud.com/n/gse00014392/b/DevOpsDbBucket/o/DevOpsDbVMImage) is available for you (size : 2.8 GB). You just have to import this image in your custom images and then to create an Oracle Linux VM from this image. You can find the documentation to import the image [here](<https://docs.cloud.oracle.com/iaas/Content/Compute/Tasks/imageimportexport.htm#ImportinganImage>) and the documentation for creating the VM from the image [here](<https://docs.cloud.oracle.com/iaas/Content/Compute/Tasks/imageimportexport.htm#ImportinganImage>). It takes about 2 minutes to get the VM. 
 
 If you do not want to work on the DevOpsDBVM then you have to install a set of tools on your Linux laptop or on a Linux VM on your laptop :
 
@@ -78,3 +78,4 @@ You can test it is working as expected with a command like below:
 +----------------+
 ```
 
+Next [02-terraform.md](02-terraform.md)
