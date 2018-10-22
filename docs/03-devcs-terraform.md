@@ -49,13 +49,13 @@ On DevCs click on your upper right icon then click on Organization.
 
 Click on VM Template. Create a New Template "TerraformTemplate" and add the software package below
 
-![Create Empty Project](images/VmTemplate.png)
+![Create Empty Project](images/VMTemplate.png)
 
 Click On Configure Compute Account in order to give information to DevCS (it will need it to create the VM).
 
 Click on Virtual Machines. Create one new Virtual Machine that uses your Template.
 
-![Create Empty Project](images/VmBuild.png)
+![Create Empty Project](images/VMBuild.png)
 
 Now you can return to your DevCS project (ex DevOpsDb1)
 
