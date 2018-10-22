@@ -20,7 +20,7 @@ Copy the url, you will need it.
 
 ## Push your code to your  git repository in Developer Cloud Service
 
-In the DevOpsDbVM (use Putty), go in the devops directory (your local project). We got this code before and you updated it before. 
+In the DevOpsDbVM (use Putty), go in the devopsdb directory (your local project). We got this code before and you updated it before. 
 
 ```shell
 cd devopsdb
