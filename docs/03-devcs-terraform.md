@@ -45,15 +45,14 @@ In DevCs on the Cloud Web Console you can now see your last activities to check 
 
 The build VM is the VM that will execute all the jobs that you will do later.
 
-On DevCs click on your upper right icon then click on Organization.
+In DevCs web console, click on the upper right icon (near the question mark) to make appear a menu, then click on Organization.
 
-Click on VM Template. Create a New Template "TerraformTemplate" and add the software package below
+Click on VM Template. Create a New Template "TerraformTemplate-XX" (XX= your user number in the workshop) and add the software package below
 
 ![Create Empty Project](images/VMTemplate.png)
 
-Click On Configure Compute Account in order to give information to DevCS (it will need it to create the VM).
-
-Click on Virtual Machines. Create one new Virtual Machine that uses your Template.
+Click on "Virtual Machines" on the left menu then click on the "Configure Compute Account" button in order to give information to DevCS (required to create build VMs). Finally, create a new
+Virtual Machine that uses your newly created Template.
 
 ![Create Empty Project](images/VMBuild.png)
 
@@ -61,7 +60,7 @@ Now you can return to your DevCS project (ex DevOpsDb1)
 
 ## Create the terraform job in  Developer Cloud Service
 
-In DevCS click on Build then on "New Job". The name of the job is Db_Instance_Creation. You use the TerraformTemplate created before (it means the job will run in a Virtual Machine that will have all the products of the TerraformTemplate).
+In DevCS web console, click on the left menu on "Build" then click on "New Job" button. The name of the job is Db_Instance_Creation. You use the TerraformTemplate created before (it means the job will run in a Virtual Machine that will have all the products of the TerraformTemplate).
 
 ![Create Empty Project](images/New_Job.png)
 
@@ -77,6 +76,18 @@ And you add a Unix Shell Builder like below
 
 Now for the first test you comment all the lines after 4 in the Unix Shell Builder (use # on each line) and you save your job.
 
+```shell
+source ./env-vars
+terraform --version
+terraform init
+terraform plan -no-color
+#terraform apply -auto-approve -no-color
+#export DBNodePublicIP=$(terraform output DBNodePublicIP)
+#echo "DBNodePublicIP = $DBNodePublicIP"
+#rm -f /tmp/outputIP.txt
+#echo $DBNodePublicIP > /tmp/outputIP.txt
+```
+
 ## Run the terraform job in  Developer Cloud Service
 
 Click on "Build Now" on the job "Db_Instance_Creation".
@@ -85,7 +96,7 @@ Note that it will take time to start because the first time the Build Virtual Ma
 
 When finished look at the build Log.
 
-Now in the Job "Db_Instance_Creation", you delete the comments # after the line 4.
+Now in the Job "Db_Instance_Creation", you can delete all the comments # after the line 4.
 
 You run the job again. It will take at least 1h to create the database so you have time to create the next jobs of this workshop. At the end of the first job you will have the IP Address of the new Database.
 

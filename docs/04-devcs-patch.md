@@ -4,7 +4,7 @@ You will use OCI CLI to do that.
 
 In DevCS like before you create a new Job. The name of the job is "Db_Instance_Patch".  Like before you add a git source control (it is your devops.git) and you add an OCIcli Builder and a Shell Unix Builder like below.
 
-![Create Empty Project](images/New_job_2.png)
+![Create Empty Project](images/New_Job_2.png)
 
 Note that we put the json parser jq (impossible to work without it) in our project because it is not on the Build VM (an enhancement request has been done for that).
 
