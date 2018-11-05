@@ -107,10 +107,8 @@ rm terraform.tfstate
 ```
 
 - The way terraform supports the OCI provider as a backend for now is with
-  pre-authenticated requests for now. It has 2 main limits that are, you cannot
-  lock the resource and you cannot use a set of resource that is needed for
-  the terraform `worskpace` feature. To continue with the setup, you should
-  create a pre-authenticated requests for your file.
+  pre-authenticated requests for now. It has 3 main limits that are, you cannot
+  lock the resource, the pre-authenticated request can expire, and you cannot use a set of resource that is needed for the terraform `worskpace` feature. To continue with the setup, you should create a pre-authenticated requests for your file.
 - In the OCI Web Console, click on your bucket. You should see the file you uploaded before. Click on the menu on the right of the file in order to create a pre-authenticated request (MyPreAuthReq) with "Permit reads on and writes to the Object" (choose a validation date that one year later than today). Copy the url in your file backend.old then rename this file to  backend.tf.
 
 Note : Because the pre-authenticated request URL should remain secret and you can have
